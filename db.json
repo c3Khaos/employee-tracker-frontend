@@ -45,7 +45,7 @@
     },
     {
       "id": 3,
-      "name": "Marketing",
+      "name": "Research and Developments",
       "employees": [
         { "id": 3, "name": "Charlie" },
         { "id": 1, "name": "Alice" },
@@ -64,7 +64,7 @@
     },
     {
       "id": 4,
-      "name": "Marketing",
+      "name": "Information Technology",
       "employees": [
         { "id": 3, "name": "Charlie" },
         { "id": 1, "name": "Alice" },
@@ -83,7 +83,7 @@
     },
     {
       "id": 5,
-      "name": "Marketing",
+      "name": "Quality Assurance",
       "employees": [
         { "id": 3, "name": "Charlie" },
         { "id": 1, "name": "Alice" },
@@ -102,7 +102,7 @@
     },
     {
       "id": 6,
-      "name": "Marketing",
+      "name": "Facility Managment",
       "employees": [
         { "id": 3, "name": "Charlie" },
         { "id": 1, "name": "Alice" },
@@ -121,7 +121,7 @@
     },
     {
       "id": 7,
-      "name": "Marketing",
+      "name": "Data and Analytics",
       "employees": [
         { "id": 3, "name": "Charlie" },
         { "id": 1, "name": "Alice" },
@@ -140,7 +140,7 @@
     },
     {
       "id": 8,
-      "name": "Marketing",
+      "name": "Public Relations",
       "employees": [
         { "id": 3, "name": "Charlie" },
         { "id": 1, "name": "Alice" },
@@ -159,7 +159,7 @@
     },
     {
       "id": 9,
-      "name": "Marketing",
+      "name": "Training and Development",
       "employees": [
         { "id": 3, "name": "Charlie" },
         { "id": 1, "name": "Alice" },
@@ -178,11 +178,11 @@
     },
     {
       "id": 10,
-      "name": "Marketing",
+      "name": "Operations and Logistics",
       "employees": [
         { "id": 3, "name": "Charlie" },
         { "id": 1, "name": "Alice" },
-        { "id": 2, "name": "Bob" },
+        { "id": 2, "name": "Bob telusko" },
         { "id": 2, "name": "Bob" },
         { "id": 2, "name": "Bob" },
         { "id": 1, "name": "Alice" },
