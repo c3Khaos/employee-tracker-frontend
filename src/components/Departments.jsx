@@ -5,7 +5,7 @@ const Departments = () => {
   const [departments, setDepartments] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3001/departments')
+    fetch('http://localhost:3000/departments')
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
