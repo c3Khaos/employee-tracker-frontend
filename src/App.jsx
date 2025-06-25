@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
 import EmployeeDashboard from './components/EmployeeDashboard';
 import LoginScreen from './components/LoginScreen';
-import EmployeeProfile from './components/EmployeeProfile'; 
 import './App.css';
 
 function App() {
@@ -42,9 +40,6 @@ function App() {
               )
             }
           />
-
-          
-          <Route path="/employees/:id" element={<EmployeeProfile />} />
         </Routes>
       </div>
     </Router>

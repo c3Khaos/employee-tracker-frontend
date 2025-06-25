@@ -1,11 +1,11 @@
-
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Departments = () => {
   const [departments, setDepartments] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/departments')
+    fetch('http://localhost:3000/departments') // Make sure this URL is correct!
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -33,17 +33,19 @@ const Departments = () => {
             </h2>
 
             <p className="text-sm text-gray-500 mb-2">
-              {dept.employees.length} Employee{dept.employees.length !== 1 && 's'}
+              {dept.employees?.length || 0} Employee
+              {dept.employees?.length !== 1 ? 's' : ''}
             </p>
 
             <div className="flex flex-wrap gap-2 mt-4">
-              {dept.employees.map((emp) => (
-                <span
+              {dept.employees?.map((emp) => (
+                <Link
+                  to={`/employees/${emp.id}`}
                   key={emp.id}
-                  className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm shadow-sm"
+                  className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm shadow-sm hover:bg-blue-200 transition duration-200"
                 >
                   {emp.name}
-                </span>
+                </Link>
               ))}
             </div>
           </div>
@@ -54,3 +56,4 @@ const Departments = () => {
 };
 
 export default Departments;
+
